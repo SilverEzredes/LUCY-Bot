@@ -132,7 +132,7 @@ def setup_persistent_components():
     globals.shards_teal   = Image.open("assets/shards/teal.png"  ).resize((33, 28))
     # Bars
     globals.bars = {}
-    for color in ["blue_white", "orange_white", "teal_white", "white_blue", "white_orange"]:
+    for color in ["blue_white", "orange_white", "teal_white", "white_blue", "white_orange", "blue_assist", "ornage_level", "red_cred"]:
         globals.bars[color] = []
         for i in range(11):
             globals.bars[color].append(Image.open(f"assets/bars/{color}/{i}.png"))
