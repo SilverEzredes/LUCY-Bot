@@ -114,12 +114,12 @@ async def restart():
 # Setup persistent image components
 def setup_persistent_components():
     # Fonts
-    globals.font47 = ImageFont.truetype("assets/square.ttf", 47)
-    globals.font35 = ImageFont.truetype("assets/square.ttf", 35)
-    globals.font30 = ImageFont.truetype("assets/square.ttf", 30)
-    globals.font24 = ImageFont.truetype("assets/square.ttf", 24)
-    globals.font20 = ImageFont.truetype("assets/square.ttf", 20)
-    globals.font16 = ImageFont.truetype("assets/square.ttf", 16)
+    globals.font47 = ImageFont.truetype("assets/Spirit.otf", 47)
+    globals.font35 = ImageFont.truetype("assets/Spirit.otf", 35)
+    globals.font30 = ImageFont.truetype("assets/Spirit.otf", 30)
+    globals.font24 = ImageFont.truetype("assets/Spirit.otf", 24)
+    globals.font20 = ImageFont.truetype("assets/Spirit.otf", 20)
+    globals.font16 = ImageFont.truetype("assets/Spirit.otf", 16)
     # Avatars
     globals.default_avatar = Image.open('assets/default_avatar.png').resize((200, 200))
     # Overlays
