@@ -141,7 +141,7 @@ def setup_persistent_components():
     for xp_type in ["level", "cred", "assistance"]:
         globals.levelups[xp_type] = {}
         globals.levelups[xp_type]["overlay"] = Image.open(f"assets/levelup/{xp_type}.png")
-        globals.levelups[xp_type]["color"] = "#FFFFFF" if xp_type == "level" else "#FFFFFF" if xp_type == "cred" else "#F06B02" if xp_type == "assistance" else ""
+        globals.levelups[xp_type]["color"] = "#9c3103" if xp_type == "level" else "#920705" if xp_type == "cred" else "#01395a" if xp_type == "assistance" else ""
 
 
 # Save bytes array into a readable binary object
