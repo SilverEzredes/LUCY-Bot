@@ -97,10 +97,10 @@ class Levelling(commands.Cog,
             utils.draw_text(draw, globals.font47, f"{assistance[0]}", "#01395a", (515, 660,), 999)
         # Draw single percentage values
         if level_next >= 100:
-            utils.draw_text(draw, globals.font47, "MAX",                "#232323", (525-globals.font47.getsize("MAX")[0],                450,), 999)
+            utils.draw_text(draw, globals.font47, "MAX",                "#232323", (535-globals.font47.getsize("MAX")[0],                450,), 999)
         else:
-            utils.draw_text(draw, globals.font47, f"{level_next}",      "#232323", (525-globals.font47.getsize(f"{level_next}")[0],      450,), 999)
-            utils.draw_text(draw, globals.font47, "%",                  "#232323", (525,                                                 450,), 999)
+            utils.draw_text(draw, globals.font47, f"{level_next}",      "#232323", (535-globals.font47.getsize(f"{level_next}")[0],      450,), 999)
+            utils.draw_text(draw, globals.font47, "%",                  "#232323", (540,                                                 450,), 999)
         if cred_next >= 100:
             utils.draw_text(draw, globals.font47, "MAX",                "#232323", (579-globals.font47.getsize("MAX")[0],                491,), 999)
         else:
