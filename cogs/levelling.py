@@ -121,8 +121,8 @@ class Levelling(commands.Cog,
             cred_bar       = globals.bars["red_cred"][utils.get_bar_index_from_lvl_percent(cred_next      )]
             assistance_bar = globals.bars["blue_assist"][utils.get_bar_index_from_lvl_percent(assistance_next)]
         img.paste(level_bar,      (35, 380,), level_bar     )
-        img.paste(cred_bar,       (35, 540,), cred_bar      )
-        img.paste(assistance_bar, (35, 685,), assistance_bar)
+        img.paste(cred_bar,       (35, 545,), cred_bar      )
+        img.paste(assistance_bar, (35, 690,), assistance_bar)
         # Send the image
         binary = io.BytesIO()
         img.save(binary, format="PNG")
