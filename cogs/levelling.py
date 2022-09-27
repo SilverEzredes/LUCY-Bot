@@ -66,9 +66,9 @@ class Levelling(commands.Cog,
         # Draw main level and cred values
         utils.draw_text    (draw, globals.font47, f"{level[0]}", "#232323", (335, 115,), 999)
         if user.id == globals.ADMIN_ID:
-            utils.draw_text(draw, globals.font47, f"{cred[0]}",  "#232323", (464, 115,), 999)
+            utils.draw_text(draw, globals.font47, f"{cred[0]}",  "#232323", (480, 115,), 999)
         else:
-            utils.draw_text(draw, globals.font47, f"{cred[0]}",  "#232323", (464, 115,), 999)
+            utils.draw_text(draw, globals.font47, f"{cred[0]}",  "#232323", (480, 115,), 999)
         # Draw trophy shards
         x = 267
         for i in range(utils.get_trophy_amount(user)):
@@ -82,7 +82,7 @@ class Levelling(commands.Cog,
             x += 24
         # Draw single level values
         if user.id == globals.ADMIN_ID:
-            utils.draw_text(draw, globals.font16, "LVL:",             "#090D18", (275, 425,), 999)
+            utils.draw_text(draw, globals.font47, "LVL:",             "#090D18", (275, 425,), 999)
             utils.draw_text(draw, globals.font24, f"{level[0]}",      "#090D18", (308, 423,), 999)
         else:
             utils.draw_text(draw, globals.font16, "LVL:",             "#FFFFFF", (275, 425,), 999)
