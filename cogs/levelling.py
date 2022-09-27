@@ -113,13 +113,13 @@ class Levelling(commands.Cog,
             utils.draw_text(draw, globals.font20, "%",                  "#090D18", (565,                                                 602,), 999)
         # Overlay percentage bars
         if user.id == globals.ADMIN_ID:
-            level_bar      = globals.bars[ "teal_white" ][utils.get_bar_index_from_lvl_percent(level_next     )]
-            cred_bar       = globals.bars[ "blue_white" ][utils.get_bar_index_from_lvl_percent(cred_next      )]
-            assistance_bar = globals.bars[ "white_blue" ][utils.get_bar_index_from_lvl_percent(assistance_next)]
+            level_bar      = globals.bars[ "orange_level" ][utils.get_bar_index_from_lvl_percent(level_next     )]
+            cred_bar       = globals.bars[ "red_cred" ][utils.get_bar_index_from_lvl_percent(cred_next      )]
+            assistance_bar = globals.bars[ "blue_assist" ][utils.get_bar_index_from_lvl_percent(assistance_next)]
         else:
-            level_bar      = globals.bars[ "blue_white" ][utils.get_bar_index_from_lvl_percent(level_next     )]
-            cred_bar       = globals.bars["orange_white"][utils.get_bar_index_from_lvl_percent(cred_next      )]
-            assistance_bar = globals.bars["white_orange"][utils.get_bar_index_from_lvl_percent(assistance_next)]
+            level_bar      = globals.bars[ "orange_level" ][utils.get_bar_index_from_lvl_percent(level_next     )]
+            cred_bar       = globals.bars["red_cred"][utils.get_bar_index_from_lvl_percent(cred_next      )]
+            assistance_bar = globals.bars["blue_assist"][utils.get_bar_index_from_lvl_percent(assistance_next)]
         img.paste(level_bar,      (218, 457,), level_bar     )
         img.paste(cred_bar,       (218, 550,), cred_bar      )
         img.paste(assistance_bar, (218, 650,), assistance_bar)
