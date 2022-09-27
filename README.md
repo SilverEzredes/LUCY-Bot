@@ -1,5 +1,5 @@
 # L.U.C.Y. Bot
-Custom Discord bot for the Uncharted/The Last of Us Modding Servers.
+Custom Discord Bot for the Uncharted/The Last of Us Modding Servers.
 
 ## Features:
  - Leveling system for:
@@ -18,4 +18,4 @@ Custom Discord bot for the Uncharted/The Last of Us Modding Servers.
  - get it working
 
 ## Credits:
-SilverEzredes#4826 for the amazing image assets
+WillyJL#3633 for making Alt bot.
