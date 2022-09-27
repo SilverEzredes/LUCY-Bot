@@ -50,9 +50,9 @@ class Levelling(commands.Cog,
         else:
             avatar = (await utils.pil_img_from_link(str(user.display_avatar.url))).resize((200, 200,))
         try:
-            img.paste(avatar, (24, 18,), avatar)
+            img.paste(avatar, (30, 18,), avatar)
         except ValueError:
-            img.paste(avatar, (24, 18,))
+            img.paste(avatar, (30, 18,))
         # Apply base overlay
         if user.id == globals.ADMIN_ID:
             img.paste(globals.overlays_admin,   (0, 0,), globals.overlays_admin  )
