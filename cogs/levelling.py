@@ -102,15 +102,15 @@ class Levelling(commands.Cog,
             utils.draw_text(draw, globals.font47, f"{level_next}",      "#232323", (535-globals.font47.getsize(f"{level_next}")[0],      440,), 999)
             utils.draw_text(draw, globals.font47, "%",                  "#232323", (540,                                                 445,), 999)
         if cred_next >= 100:
-            utils.draw_text(draw, globals.font47, "MAX",                "#232323", (550-globals.font47.getsize("MAX")[0],                580,), 999)
+            utils.draw_text(draw, globals.font47, "MAX",                "#232323", (555-globals.font47.getsize("MAX")[0],                590,), 999)
         else:
-            utils.draw_text(draw, globals.font47, f"{cred_next}",       "#232323", (550-globals.font47.getsize(f"{cred_next}")[0],       580,), 999)
-            utils.draw_text(draw, globals.font47, "%",                  "#232323", (555,                                                 585,), 999)
+            utils.draw_text(draw, globals.font47, f"{cred_next}",       "#232323", (555-globals.font47.getsize(f"{cred_next}")[0],       590,), 999)
+            utils.draw_text(draw, globals.font47, "%",                  "#232323", (560,                                                 595,), 999)
         if assistance_next >= 100:
-            utils.draw_text(draw, globals.font47, "MAX",                "#232323", (65-globals.font47.getsize("MAX")[0],                730,), 999)
+            utils.draw_text(draw, globals.font47, "MAX",                "#232323", (70-globals.font47.getsize("MAX")[0],                732,), 999)
         else:
-            utils.draw_text(draw, globals.font47, f"{assistance_next}", "#232323", (65-globals.font47.getsize(f"{assistance_next}")[0], 730,), 999)
-            utils.draw_text(draw, globals.font47, "%",                  "#232323", (65,                                                 735,), 999)
+            utils.draw_text(draw, globals.font47, f"{assistance_next}", "#232323", (70-globals.font47.getsize(f"{assistance_next}")[0], 732,), 999)
+            utils.draw_text(draw, globals.font47, "%",                  "#232323", (75,                                                 737,), 999)
         # Overlay percentage bars
         if user.id == globals.ADMIN_ID:
             level_bar      = globals.bars[ "orange_level" ][utils.get_bar_index_from_lvl_percent(level_next     )]
