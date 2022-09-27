@@ -64,11 +64,11 @@ class Levelling(commands.Cog,
         username = user.name.encode('ascii', 'replace').decode('ascii')  # Remove non-ascii glyphs
         utils.draw_text(draw, globals.font35, username, "#232323", (44, 225,), 298)
         # Draw main level and cred values
-        utils.draw_text    (draw, globals.font47, f"{level[0]}", "#232323", (335, 115,), 999)
+        utils.draw_text    (draw, globals.font47, f"{level[0]}", "#232323", (335, 110,), 999)
         if user.id == globals.ADMIN_ID:
-            utils.draw_text(draw, globals.font47, f"{cred[0]}",  "#232323", (480, 115,), 999)
+            utils.draw_text(draw, globals.font47, f"{cred[0]}",  "#232323", (490, 110,), 999)
         else:
-            utils.draw_text(draw, globals.font47, f"{cred[0]}",  "#232323", (480, 115,), 999)
+            utils.draw_text(draw, globals.font47, f"{cred[0]}",  "#232323", (490, 110,), 999)
         # Draw trophy shards
         x = 267
         for i in range(utils.get_trophy_amount(user)):
@@ -82,8 +82,8 @@ class Levelling(commands.Cog,
             x += 24
         # Draw single level values
         if user.id == globals.ADMIN_ID:
-            utils.draw_text(draw, globals.font47, "LVL:",             "#090D18", (275, 425,), 999)
-            utils.draw_text(draw, globals.font24, f"{level[0]}",      "#090D18", (308, 423,), 999)
+            utils.draw_text(draw, globals.font47, "LVL:",             "#9c3103", (500, 325,), 999)
+            utils.draw_text(draw, globals.font47, f"{level[0]}",      "#9c3103", (500, 323,), 999)
         else:
             utils.draw_text(draw, globals.font16, "LVL:",             "#FFFFFF", (275, 425,), 999)
             utils.draw_text(draw, globals.font24, f"{level[0]}",      "#FFFFFF", (308, 423,), 999)
