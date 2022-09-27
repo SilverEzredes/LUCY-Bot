@@ -62,7 +62,7 @@ class Levelling(commands.Cog,
             img.paste(globals.overlays_default, (0, 0,), globals.overlays_default)
         # Draw username
         username = user.name.encode('ascii', 'replace').decode('ascii')  # Remove non-ascii glyphs
-        utils.draw_text(draw, globals.font35, username, "#FFFFFF", (268, 85,), 298)
+        utils.draw_text(draw, globals.font35, username, "#232323", (168, 85,), 298)
         # Draw main level and cred values
         utils.draw_text    (draw, globals.font47, f"LV:{level[0]}", "#009EDF", (277, 141,), 999)
         if user.id == globals.ADMIN_ID:
