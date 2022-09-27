@@ -91,10 +91,10 @@ class Levelling(commands.Cog,
         utils.draw_text    (draw, globals.font47, f"{cred[0]}",       "#920705", (515, 510,), 999)
         if user.id == globals.ADMIN_ID:
             # utils.draw_text(draw, globals.font16, "LVL:",             "#009EDF", (275, 619,), 999)
-            utils.draw_text(draw, globals.font47, f"{assistance[0]}", "#01395a", (515, 710,), 999)
+            utils.draw_text(draw, globals.font47, f"{assistance[0]}", "#01395a", (515, 650,), 999)
         else:
             # utils.draw_text(draw, globals.font16, "LVL:",             "#F06B02", (275, 619,), 999)
-            utils.draw_text(draw, globals.font47, f"{assistance[0]}", "#01395a", (515, 710,), 999)
+            utils.draw_text(draw, globals.font47, f"{assistance[0]}", "#01395a", (515, 650,), 999)
         # Draw single percentage values
         if level_next >= 100:
             utils.draw_text(draw, globals.font30, "MAX",                "#090D18", (579-globals.font30.getsize("MAX")[0],                398,), 999)
@@ -120,9 +120,9 @@ class Levelling(commands.Cog,
             level_bar      = globals.bars[ "orange_level" ][utils.get_bar_index_from_lvl_percent(level_next     )]
             cred_bar       = globals.bars["red_cred"][utils.get_bar_index_from_lvl_percent(cred_next      )]
             assistance_bar = globals.bars["blue_assist"][utils.get_bar_index_from_lvl_percent(assistance_next)]
-        img.paste(level_bar,      (218, 457,), level_bar     )
-        img.paste(cred_bar,       (218, 550,), cred_bar      )
-        img.paste(assistance_bar, (218, 650,), assistance_bar)
+        img.paste(level_bar,      (45, 370,), level_bar     )
+        img.paste(cred_bar,       (40, 530,), cred_bar      )
+        img.paste(assistance_bar, (35, 650,), assistance_bar)
         # Send the image
         binary = io.BytesIO()
         img.save(binary, format="PNG")
