@@ -1,5 +1,5 @@
-# A.L.T.I.E.R.A. Bot
-Custom Discord bot for the Cyberpunk 2077 Modding Servers
+# L.U.C.Y. Bot
+Custom Discord bot for the Uncharted/The Last of Us Modding Servers.
 
 ## Features:
  - Leveling system for:
@@ -15,7 +15,7 @@ Custom Discord bot for the Cyberpunk 2077 Modding Servers
  - Join message
 
 ## To Do:
- - idk
+ - get it working
 
 ## Credits:
 SilverEzredes#4826 for the amazing image assets
