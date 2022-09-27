@@ -16,6 +16,9 @@ Custom Discord Bot for the Uncharted/The Last of Us Modding Servers.
 
 ## To Do:
  - get it working
+ - level up backgrounds
+ - staff and admin overlay
+ 
 
 ## Credits:
 WillyJL#3633 for making Alt bot.
