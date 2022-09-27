@@ -86,9 +86,9 @@ class Levelling(commands.Cog,
             utils.draw_text(draw, globals.font47, f"{level[0]}",      "#9c3103", (515, 350,), 999)
         else:
             # utils.draw_text(draw, globals.font16, "LVL:",             "#FFFFFF", (275, 425,), 999)
-            utils.draw_text(draw, globals.font47, f"{level[0]}",      "#9c3103", (515, 423,), 999)
+            utils.draw_text(draw, globals.font47, f"{level[0]}",      "#9c3103", (515, 350,), 999)
         # utils.draw_text    (draw, globals.font16, "LVL:",             "#FFFFFF", (275, 518,), 999)
-        utils.draw_text    (draw, globals.font47, f"{cred[0]}",       "#9c3103", (308, 516,), 999)
+        utils.draw_text    (draw, globals.font47, f"{cred[0]}",       "#920705", (515, 510,), 999)
         if user.id == globals.ADMIN_ID:
             utils.draw_text(draw, globals.font16, "LVL:",             "#009EDF", (275, 619,), 999)
             utils.draw_text(draw, globals.font24, f"{assistance[0]}", "#009EDF", (308, 617,), 999)
