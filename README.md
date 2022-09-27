@@ -15,7 +15,7 @@ Custom Discord Bot for the Uncharted/The Last of Us Modding Servers.
  - Join message
 
 ## To Do:
- - Fix overlay elements + bully willy with some random shit
+ - LowOrbitBorpaSpin.wav
  
 
 ## Credits:
