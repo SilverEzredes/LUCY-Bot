@@ -214,7 +214,7 @@ async def main():
             await channel.send(content=user.mention,
                                embed=utils.custom_embed(user.guild,
                                                         title="👋 Welcome!",
-                                                        description=f"Welcome {user.mention} to Uncharted Modding!\n"
+                                                        description=f"Welcome {user.mention} to {'Uncharted' if user.guild.id == 903774002844172288 else 'The Last of Us'} Modding!\n"
                                                                     "\n" +
                                                                     (f"Make sure you have read through <#{globals.JOIN_LOG_CHANNEL_IDS[str(user.guild.id)]['rules_channel_id']}>!\n" if globals.JOIN_LOG_CHANNEL_IDS[str(user.guild.id)]["rules_channel_id"] else "") +
                                                                     (f"You can pick your poison in <#{globals.JOIN_LOG_CHANNEL_IDS[str(user.guild.id)]['selfrole_channel_id']}>!\n" if globals.JOIN_LOG_CHANNEL_IDS[str(user.guild.id)]["selfrole_channel_id"] else "") +
